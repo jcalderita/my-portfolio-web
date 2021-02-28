@@ -4,12 +4,19 @@
   "description": "Portfolio/Cv web.",
   "main": "index.html",
   "scripts": {
+    "sass": "sass --watch scss/main.scss:css/main.css",
+    "live": "live-server",
+    "start": "start npm run sass && start npm run live",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jcalderita/my-portfolio-web.git"
   },
+  "keywords": [
+    "portfolio",
+    "cv"
+  ],
   "author": "jcalderita",
   "license": "AGPL-3.0-or-later",
   "bugs": {
