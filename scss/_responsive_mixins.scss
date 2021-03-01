@@ -1,0 +1,18 @@
+$media: 50rem;
+
+@mixin media-display-none {
+  @media (min-width: $media) {
+    display: none;
+  }
+}
+@mixin media-display-flex {
+  @media (min-width: $media) {
+    display: flex;
+  }
+}
+
+@mixin media-display-content {
+  @media (min-width: $media) {
+    @content;
+  }
+}
