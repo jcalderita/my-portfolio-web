@@ -1,4 +1,5 @@
-$media: 50rem;
+$media: 52rem;
+$height: 47rem;
 
 @mixin media-display-none {
   @media (min-width: $media) {
@@ -13,6 +14,18 @@ $media: 50rem;
 
 @mixin media-display-content {
   @media (min-width: $media) {
+    @content;
+  }
+}
+
+@mixin media-height-100 {
+  @media (max-height: $height) and (orientation: landscape) {
+    height: 100%;
+  }
+}
+
+@mixin media-height-content {
+  @media (max-height: $height) and (orientation: landscape) {
     @content;
   }
 }

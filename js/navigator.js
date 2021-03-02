@@ -14,6 +14,7 @@ const handleHover = function (e) {
 const inicializarNavegador = () => {
   main_nav__items.addEventListener('mouseover', handleHover.bind(0.5));
   main_nav__items.addEventListener('mouseout', handleHover.bind(1));
+  main_nav__items.addEventListener('click', handleHover.bind(1));
 };
 
 export default inicializarNavegador;

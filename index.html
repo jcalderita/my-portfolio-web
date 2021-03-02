@@ -38,7 +38,7 @@
           <li class="main-nav__item">
             <a href="#section--5">Habilidades</a>
           </li>
-          <li class="main-nav__item nain-nav__item--cto">
+          <li class="main-nav__item btn--show-modal">
             <a href="#">Contacto</a>
           </li>
         </ul>
@@ -61,14 +61,14 @@
         <li class="mobile-nav__item">
           <a href="#section--5">Habilidades</a>
         </li>
-        <li class="mobile-nav__item mobile-nav__item--cto">
+        <li class="mobile-nav__item btn--show-modal">
           <a href="#">Contacto</a>
         </li>
       </ul>
     </nav>
     <main>
       <section class="section">
-        <div>
+        <div class="header-sentence">
           <h1>
             Un desarrollador de software no
             <span class="highlight">implementa</span>
@@ -81,5 +81,66 @@
         <img src="img/face.png" alt="Siempre programando" />
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__link link">
+        <svg>
+          <use xlink:href="img/icons.svg#tel"></use>
+        </svg>
+        <p>699 38 40 70</p>
+      </div>
+      <a class="footer__link link" target="_blank" href="mailto:jcalderita@gmail.com">
+        <svg>
+          <use xlink:href="img/icons.svg#email"></use>
+        </svg>
+        <p>jcalderita@gmail.com</p>
+      </a>
+      <a class="footer__link link" target="_blank" href="https://www.linkedin.com/in/jcalderita">
+        <svg>
+          <use xlink:href="img/icons.svg#linkedin"></use>
+        </svg>
+        <p>linkedin</p>
+      </a>
+      <a class="footer__link link" target="_blank" href="https://github.com/jcalderita">
+        <svg>
+          <use xlink:href="img/icons.svg#github"></use>
+        </svg>
+        <p>gitHub</p>
+      </a>
+      <a class="footer__link link" target="_blank" href="cv/CV.pdf">
+        <svg>
+          <use xlink:href="img/icons.svg#pdf"></use>
+        </svg>
+        <p>descargar cv</p>
+      </a>
+    </footer>
+    <div class="modal hidden">
+      <button class="btn--close-modal close-modal">&times;</button>
+      <h2>Ponte en <span class="highlight">contacto</span> conmigo de la manera que quieras</h2>
+      <div>
+        <div class="modal__link link">
+          <svg>
+            <use xlink:href="img/icons.svg#user"></use>
+          </svg>
+          <p>Jorge Calderita Echeverr&iacute;a</p>
+        </div>
+        <div class="modal__link link">
+          <svg>
+            <use xlink:href="img/icons.svg#tel"></use>
+          </svg>
+          <p>699 38 40 70</p>
+        </div>
+        <div class="modal__link--center">
+          <a class="modal__link link" target="_blank" href="mailto:jcalderita@gmail.com">
+            <svg>
+              <use xlink:href="img/icons.svg#email"></use>
+            </svg>
+            <p>jcalderita@gmail.com</p>
+          </a>
+        </div>
+        <div class="modal--close__item main-nav__item btn--show-modal close-modal">
+          <a href="#">Cerrar</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

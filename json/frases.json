@@ -1,0 +1,38 @@
+[
+  {
+    "frase": "Un desarrollador de software no implementa código limpio con un látigo atrás",
+    "autor": "Rafaél Gómez",
+    "hl1": 6,
+    "hl2": 11
+  },
+  {
+    "frase": "Sé bueno con los nerds. Es muy probable que termines trabajando para uno de ellos",
+    "autor": "Bill Gates",
+    "hl1": 5,
+    "hl2": 11
+  },
+  {
+    "frase": "Un punto  y coma (;) perdido puede ser un verdadero quebradero de cabeza",
+    "autor": "Desarrollador Desesperado",
+    "hl1": 6,
+    "hl2": 12
+  },
+  {
+    "frase": "El curriculum solo lo da la calidad, no la cantidad de proyectos mal acabados y con problemas",
+    "autor": "Rafaél Gómez",
+    "hl1": 7,
+    "hl2": 10
+  },
+  {
+    "frase": "En ocasiones un software termina siendo un jardín abandonado lleno de malas hierbas",
+    "autor": "Rafaél Gómez",
+    "hl1": 9,
+    "hl2": 12
+  },
+  {
+    "frase": "En software pasamos un 20% de nuestro tiempo escribiendo código productivo y 80% ¡depurándolo!",
+    "autor": "Desarrollador Depurando",
+    "hl1": 5,
+    "hl2": 13
+  }
+]
