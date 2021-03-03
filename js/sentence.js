@@ -1,15 +1,15 @@
 'use strict';
 
-const header_sentence = document.querySelector('.header-sentence');
+const section_sentence = document.querySelector('.section__sentence');
 
 function indexFraseRandom(max) {
   return Math.floor(Math.random() * max);
 }
 
 const limpiarFraseAutor = () => {
-  let h = header_sentence.querySelector('h1');
+  let h = section_sentence.querySelector('h1');
   h.remove();
-  h = header_sentence.querySelector('h4');
+  h = section_sentence.querySelector('h4');
   h.remove();
 };
 
@@ -37,12 +37,14 @@ const frase = async () => {
 const inicializarSentence = async () => {
   const texto = await frase();
   const h4 = document.createElement('h4');
+  h4.classList.add('section__subtitle');
   h4.textContent = texto.autor;
   const h1 = document.createElement('h1');
+  h1.classList.add('section__title');
   h1.innerHTML = puntearFrase(texto.frase.split(' '), texto.hl1, texto.hl2);
   limpiarFraseAutor();
-  header_sentence.prepend(h4);
-  header_sentence.prepend(h1);
+  section_sentence.prepend(h4);
+  section_sentence.prepend(h1);
 };
 
 export default inicializarSentence;

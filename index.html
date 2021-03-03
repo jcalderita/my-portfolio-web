@@ -15,7 +15,7 @@
   <body>
     <div class="backdrop"></div>
     <header class="main-header">
-      <img src="img/favicon/logo.svg" alt="logo" />
+      <img src="img/favicon/logo.svg" alt="logo" class="main-header__logo" />
       <button class="toggle-button">
         <span class="toggle-button__bar"></span>
         <span class="toggle-button__bar"></span>
@@ -24,22 +24,22 @@
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="#section--1">Perfil</a>
+            <a href="#section--1" class="link">Perfil</a>
           </li>
           <li class="main-nav__item">
-            <a href="#section--2">Experiencia</a>
+            <a href="#section--2" class="link">Experiencia</a>
           </li>
           <li class="main-nav__item">
-            <a href="#section--3">Estudios</a>
+            <a href="#section--3" class="link">Estudios</a>
           </li>
           <li class="main-nav__item">
-            <a href="#section--4">Conocimiento</a>
+            <a href="#section--4" class="link">Conocimiento</a>
           </li>
           <li class="main-nav__item">
-            <a href="#section--5">Habilidades</a>
+            <a href="#section--5" class="link">Habilidades</a>
           </li>
-          <li class="main-nav__item btn--show-modal">
-            <a href="#">Contacto</a>
+          <li class="main-nav__item">
+            <a href="#" class="link btn--show-modal">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -47,100 +47,71 @@
     <nav class="mobile-nav">
       <ul class="mobile-nav__items">
         <li class="mobile-nav__item">
-          <a href="#section--1">Perfil</a>
+          <a href="#section--1" class="link">Perfil</a>
         </li>
         <li class="mobile-nav__item">
-          <a href="#section--2">Experiencia</a>
+          <a href="#section--2" class="link">Experiencia</a>
         </li>
         <li class="mobile-nav__item">
-          <a href="#section--3">Estudios</a>
+          <a href="#section--3" class="link">Estudios</a>
         </li>
         <li class="mobile-nav__item">
-          <a href="#section--4">Conocimiento</a>
+          <a href="#section--4" class="link">Conocimiento</a>
         </li>
         <li class="mobile-nav__item">
-          <a href="#section--5">Habilidades</a>
+          <a href="#section--5" class="link">Habilidades</a>
         </li>
-        <li class="mobile-nav__item btn--show-modal">
-          <a href="#">Contacto</a>
+        <li class="mobile-nav__item">
+          <a href="#" class="link btn--show-modal">Contacto</a>
         </li>
       </ul>
     </nav>
     <main>
       <section class="section">
-        <div class="header-sentence">
-          <h1>
+        <div class="section__sentence">
+          <h1 class="section__title">
             Un desarrollador de software no
             <span class="highlight">implementa</span>
             c&oacute;digo limpio con un
             <span class="highlight">l&aacute;tigo</span> atr&aacute;s
           </h1>
-          <h4>Rafa&eacute;l G&oacute;mez</h4>
+          <h4 class="section__subtitle">Rafa&eacute;l G&oacute;mez</h4>
           <button class="btn--text">Seguir leyendo &DownArrow;</button>
         </div>
-        <img src="img/face.png" alt="Siempre programando" />
+        <img src="img/face.png" alt="Siempre programando" class="section__face" />
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__link link">
-        <svg>
+      <div class="footer__link">
+        <svg class="footer__icon">
           <use xlink:href="img/icons.svg#tel"></use>
         </svg>
         <p>699 38 40 70</p>
       </div>
-      <a class="footer__link link" target="_blank" href="mailto:jcalderita@gmail.com">
-        <svg>
+      <a class="footer__link" target="_blank" href="mailto:jcalderita@gmail.com">
+        <svg class="footer__icon">
           <use xlink:href="img/icons.svg#email"></use>
         </svg>
         <p>jcalderita@gmail.com</p>
       </a>
-      <a class="footer__link link" target="_blank" href="https://www.linkedin.com/in/jcalderita">
-        <svg>
+      <a class="footer__link" target="_blank" href="https://www.linkedin.com/in/jcalderita">
+        <svg class="footer__icon">
           <use xlink:href="img/icons.svg#linkedin"></use>
         </svg>
         <p>linkedin</p>
       </a>
-      <a class="footer__link link" target="_blank" href="https://github.com/jcalderita">
-        <svg>
+      <a class="footer__link" target="_blank" href="https://github.com/jcalderita">
+        <svg class="footer__icon">
           <use xlink:href="img/icons.svg#github"></use>
         </svg>
         <p>gitHub</p>
       </a>
-      <a class="footer__link link" target="_blank" href="cv/CV.pdf">
-        <svg>
+      <a class="footer__link" target="_blank" href="cv/CV.pdf">
+        <svg class="footer__icon">
           <use xlink:href="img/icons.svg#pdf"></use>
         </svg>
         <p>descargar cv</p>
       </a>
     </footer>
-    <div class="modal hidden">
-      <button class="btn--close-modal close-modal">&times;</button>
-      <h2>Ponte en <span class="highlight">contacto</span> conmigo de la manera que quieras</h2>
-      <div>
-        <div class="modal__link link">
-          <svg>
-            <use xlink:href="img/icons.svg#user"></use>
-          </svg>
-          <p>Jorge Calderita Echeverr&iacute;a</p>
-        </div>
-        <div class="modal__link link">
-          <svg>
-            <use xlink:href="img/icons.svg#tel"></use>
-          </svg>
-          <p>699 38 40 70</p>
-        </div>
-        <div class="modal__link--center">
-          <a class="modal__link link" target="_blank" href="mailto:jcalderita@gmail.com">
-            <svg>
-              <use xlink:href="img/icons.svg#email"></use>
-            </svg>
-            <p>jcalderita@gmail.com</p>
-          </a>
-        </div>
-        <div class="modal--close__item main-nav__item btn--show-modal close-modal">
-          <a href="#">Cerrar</a>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

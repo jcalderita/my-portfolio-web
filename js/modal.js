@@ -16,7 +16,6 @@ const closeModal = function (e) {
   e.preventDefault();
   modal.classList.add('hidden');
   backdrop.classList.remove('open');
-  // overlay.classList.add('hidden');
 };
 
 const inicializarModal = () => {
