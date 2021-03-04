@@ -180,27 +180,27 @@ body {
 
 main {
   grid-area: main;
-  height: calc(100vh - 3.5rem);
-}
-@media (max-height: 47rem) and (orientation: landscape) {
-  main {
-    height: 100%;
-  }
-}
-@media (min-width: 130rem) {
-  main {
-    height: calc(100vh - 3.5rem);
-  }
+  display: grid;
 }
 
 .section {
   margin: 0;
   padding: 1rem;
   transition: transform 1s, opacity 1s;
-  height: 100%;
+  height: calc(100vh - 3.5rem);
   display: grid;
   align-items: center;
   justify-items: center;
+}
+@media (max-height: 47rem) and (orientation: landscape) {
+  .section {
+    height: 100%;
+  }
+}
+@media (min-width: 130rem) {
+  .section {
+    height: calc(100vh - 4.5rem);
+  }
 }
 .section__face {
   width: 60%;
@@ -216,6 +216,23 @@ main {
     max-width: 500px;
   }
 }
+.section__name {
+  width: 100%;
+}
+.section__description {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #5ec576;
+}
+.section__header {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 @media (min-width: 52rem) {
   .section {
     display: flex;
@@ -230,10 +247,38 @@ main {
     font-size: 1.5rem;
   }
 }
-
 .section--hidden {
   opacity: 0;
   transform: translateY(8rem);
+}
+.section--height {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.features {
+  text-align: center;
+}
+.features__img {
+  width: 80%;
+}
+.features__title {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.features__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5ec5763a;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.features__text {
+  text-align: left;
+  margin: 0;
 }
 
 .highlight {
@@ -352,9 +397,7 @@ main {
   padding: 0.5rem;
   color: inherit;
   display: flex;
-  align-items: center;
   column-gap: 1rem;
-  width: fit-content;
 }
 @media (min-width: 130rem) {
   .modal__item {
@@ -363,7 +406,6 @@ main {
 }
 .modal__link {
   text-decoration: none;
-  color: inherit;
 }
 .modal__btn--close {
   border: none;
