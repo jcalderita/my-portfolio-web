@@ -416,13 +416,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1rem;
+    // column-gap: 1rem;
     height: 2rem;
     padding: 1.2rem 0;
     text-decoration: none;
 
     @include media-large-content() {
       font-size: 1.2rem;
+    }
+
+    p {
+      margin-left: 1rem;
     }
   }
 }
