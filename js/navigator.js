@@ -6,7 +6,20 @@ const modal = document.querySelector('.modal');
 const main_nav__items = document.querySelector('.main-nav__items');
 const btnsCloseModal = document.querySelectorAll('.close-modal');
 const btnsOpenModal = document.querySelectorAll('a.btn-green');
-console.log(btnsOpenModal);
+const seguirLeyendo = document.querySelector('.btn--text');
+const section1 = document.querySelector('#section--1');
+
+const items__links = document.querySelectorAll('.main-nav__items, .mobile-nav__items');
+
+const scroolTo = function (e) {
+  e.preventDefault();
+  const lnk = e.target.closest('.link:not(.btn-green)');
+  if (!lnk) return;
+  const lnkParent = e.target.closest('.mobile-nav__item');
+  lnkParent && removeOpen();
+  const el = document.querySelector(lnk.getAttribute('href'));
+  el && el.scrollIntoView({ behavior: 'smooth' });
+};
 
 const removeOpenZindex = () => {
   setTimeout(() => {
@@ -62,6 +75,11 @@ const inicializarNavegador = () => {
       closeModal();
     }
   });
+  seguirLeyendo.addEventListener('click', e => {
+    e.preventDefault();
+    section1.scrollIntoView({ behavior: 'smooth' });
+  });
+  items__links.forEach(e => e.addEventListener('click', scroolTo));
 };
 
 export default inicializarNavegador;
