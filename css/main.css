@@ -320,12 +320,10 @@ main {
 }
 .features__title {
   display: flex;
-  gap: 1rem;
   align-items: center;
 }
 @media (min-width: 52rem) {
   .features__title {
-    gap: 0;
     grid-area: title;
     flex-direction: column;
     align-items: flex-start;
@@ -365,6 +363,12 @@ main {
 }
 .features__header {
   font-size: 1.2rem;
+  margin-left: 1rem;
+}
+@media (min-width: 52rem) {
+  .features__header {
+    margin-left: 0rem;
+  }
 }
 @media (min-width: 130rem) {
   .features__header {
