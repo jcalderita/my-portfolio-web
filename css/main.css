@@ -319,18 +319,13 @@ main {
   filter: blur(1.2rem);
 }
 .features__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 1rem;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  gap: 1rem;
   align-items: center;
 }
 @media (min-width: 52rem) {
   .features__title {
+    gap: 0;
     grid-area: title;
     flex-direction: column;
     align-items: flex-start;
@@ -338,14 +333,8 @@ main {
   }
 }
 .features__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background-color: #5ec5763a;
   height: 3.2rem;
