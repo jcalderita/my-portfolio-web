@@ -422,6 +422,7 @@ main {
   .footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 .footer__link {
@@ -440,6 +441,25 @@ main {
 }
 .footer__link p {
   margin-left: 1rem;
+}
+.footer__copyright {
+  height: 4rem;
+  color: #aaa;
+  width: 100%;
+}
+@media (min-width: 52rem) {
+  .footer__copyright {
+    margin-top: 1rem;
+  }
+}
+.footer__copyright span {
+  display: block;
+  color: #f3f3f3;
+}
+@media (min-width: 52rem) {
+  .footer__copyright span {
+    display: inline;
+  }
 }
 
 .icon {

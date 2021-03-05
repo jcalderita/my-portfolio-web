@@ -409,6 +409,7 @@ main {
   @include media-display-content() {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -427,6 +428,24 @@ main {
 
     p {
       margin-left: 1rem;
+    }
+  }
+
+  &__copyright {
+    height: 4rem;
+    color: $font-color-copyright;
+    width: 100%;
+    @include media-display-content() {
+      margin-top: 1rem;
+    }
+
+    span {
+      display: block;
+      @include media-display-content() {
+        display: inline;
+      }
+
+      color: $background;
     }
   }
 }
