@@ -24,6 +24,7 @@ const prevSlide = () => {
 
 const nextSlide = () => {
   desactivarDot();
+
   curSlide === slides.length - 1 ? (curSlide = 0) : curSlide++;
   goToSlide();
 };
@@ -32,7 +33,7 @@ const inicializarSlide = () => {
   dotContainer.addEventListener('click', function (e) {
     if (e.target.dataset.slide) {
       desactivarDot();
-      curSlide = e.target.dataset.slide;
+      curSlide = +e.target.dataset.slide;
       goToSlide();
     }
   });
