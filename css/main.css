@@ -13,6 +13,16 @@
   src: url("../fonts/Poppins-Bold.ttf");
   font-weight: bold;
 }
+@keyframes move {
+  from {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+  to {
+    top: 0;
+    transform: translateY(0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -45,7 +55,7 @@ body {
 }
 
 .main-header {
-  z-index: 1;
+  z-index: 2;
   background: #f3f3f3;
   position: fixed;
   top: 0;
@@ -155,7 +165,7 @@ body {
 .mobile-nav {
   transform: translateX(100%);
   position: fixed;
-  z-index: 101;
+  z-index: 3;
   background: #f3f3f3;
   top: 3.5rem;
   right: 0;
@@ -290,16 +300,56 @@ main {
   top: -4.5rem;
   left: 0;
 }
-.section--template-row-slider {
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+.section--template-row-grid {
   grid-template-rows: 0px 0.1fr auto;
   min-height: calc(100vh - 3.5rem);
-  height: 100%;
 }
 @media (min-width: 52rem) {
-  .section--template-row-slider {
-    min-height: calc(100vh + 3.5rem);
+  .section--template-row-grid {
+    min-height: calc(100vh + 2.5rem);
   }
+}
+.section__studies {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+@media (min-width: 130rem) {
+  .section__studies {
+    height: 97%;
+  }
+}
+.section__studies--up {
+  height: fit-content;
+  position: relative;
+  animation: move 3s linear 2s reverse forwards;
+}
+@media (min-width: 52rem) {
+  .section__studies--up {
+    justify-self: center;
+    margin-right: 11rem;
+  }
+}
+.section__studies--down {
+  height: fit-content;
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+  animation: move 3s linear 2s forwards;
+  text-align: right;
+}
+@media (min-width: 52rem) {
+  .section__studies--down {
+    justify-self: center;
+    margin-left: 11rem;
+  }
+}
+
+.not-margin-padding {
+  padding: 0;
+  margin: 0;
 }
 
 .features {
@@ -546,7 +596,7 @@ main {
   transform: translateY(0);
 }
 .open--add-zindex {
-  z-index: 2;
+  z-index: 3;
 }
 
 .hidden {
@@ -565,7 +615,7 @@ main {
 .slider__btn {
   position: absolute;
   top: 96%;
-  z-index: 10;
+  z-index: 1;
   border: none;
   background: rgba(255, 255, 255, 0.7);
   font-family: inherit;

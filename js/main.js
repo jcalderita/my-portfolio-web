@@ -11,6 +11,3 @@ inicializarSentence();
 inicializarSecciones();
 inicializarImages();
 inicializarSlide();
-
-const prueba = document.querySelector('.slide--1');
-console.log(prueba.height);
