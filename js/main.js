@@ -11,3 +11,7 @@ inicializarSentence();
 inicializarSecciones();
 inicializarImages();
 inicializarSlide();
+
+// const html = document.querySelector('.html');
+// console.log(html);
+// html.classList.toggle('zoom--active');

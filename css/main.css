@@ -350,6 +350,27 @@ main {
     margin-left: 11rem;
   }
 }
+.section__learn {
+  align-self: start;
+}
+.section__learn--not-display {
+  display: none;
+}
+
+.zoom {
+  transition: transform 1s;
+}
+.zoom:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.zoom:active {
+  transform: scale(1.3);
+}
+.zoom--active {
+  transition: none;
+  transform: scale(1.3);
+}
 
 .not-margin-padding {
   padding: 0;
