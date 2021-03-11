@@ -291,26 +291,30 @@ main {
     margin: 0;
     padding: 0;
     display: grid;
-    &--up {
-      height: fit-content;
-      position: relative;
+  }
+  &__study-up {
+    height: fit-content;
+    position: relative;
+    &--animation {
       animation: move 3s linear 2s reverse forwards;
-      @include media-display-content() {
-        justify-self: center;
-        margin-right: 11rem;
-      }
     }
-    &--down {
-      height: fit-content;
-      position: relative;
-      top: 100%;
-      transform: translateY(-100%);
+    @include media-display-content() {
+      justify-self: center;
+      margin-right: 11rem;
+    }
+  }
+  &__study-down {
+    height: fit-content;
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    &--animation {
       animation: move 3s linear 2s forwards;
-      text-align: right;
-      @include media-display-content() {
-        justify-self: center;
-        margin-left: 11rem;
-      }
+    }
+    text-align: right;
+    @include media-display-content() {
+      justify-self: center;
+      margin-left: 11rem;
     }
   }
 }

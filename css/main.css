@@ -321,27 +321,31 @@ main {
     height: 97%;
   }
 }
-.section__studies--up {
+.section__study-up {
   height: fit-content;
   position: relative;
+}
+.section__study-up--animation {
   animation: move 3s linear 2s reverse forwards;
 }
 @media (min-width: 52rem) {
-  .section__studies--up {
+  .section__study-up {
     justify-self: center;
     margin-right: 11rem;
   }
 }
-.section__studies--down {
+.section__study-down {
   height: fit-content;
   position: relative;
   top: 100%;
   transform: translateY(-100%);
-  animation: move 3s linear 2s forwards;
   text-align: right;
 }
+.section__study-down--animation {
+  animation: move 3s linear 2s forwards;
+}
 @media (min-width: 52rem) {
-  .section__studies--down {
+  .section__study-down {
     justify-self: center;
     margin-left: 11rem;
   }
