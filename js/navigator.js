@@ -6,7 +6,7 @@ const modal = document.querySelector('.modal');
 const main_nav__items = document.querySelector('.main-nav__items');
 const btnsCloseModal = document.querySelectorAll('.close-modal');
 const btnsOpenModal = document.querySelectorAll('a.btn-green');
-const seguirLeyendo = document.querySelector('.btn--text');
+const seguirLeyendo = document.querySelector('.section__btn-reading');
 const section1 = document.querySelector('#section--1');
 
 const items__links = document.querySelectorAll('.main-nav__items, .mobile-nav__items');
