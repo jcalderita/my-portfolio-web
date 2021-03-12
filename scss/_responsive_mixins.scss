@@ -36,3 +36,15 @@ $height: 47rem;
     @content;
   }
 }
+
+$numSkills: 6;
+
+@mixin stagger-anim-delay($i, $initial-delay, $stagger-delay) {
+  @while $i > 0 {
+    &:nth-of-type(#{$i}) {
+      animation: 1s anim-lightspeed-in ease forwards;
+      animation-delay: $initial-delay + $stagger-delay * $i;
+    }
+    $i: $i - 1;
+  }
+}

@@ -8,10 +8,14 @@ const revelarSections = (entries, observer) => {
     entry.target.classList.remove('section--hidden');
     observer.unobserve(entry.target);
     const up = entry.target.querySelector('.section__study-up');
-    if (!up) return;
-    up.classList.add('section__study-up--animation');
-    const down = entry.target.querySelector('.section__study-down');
-    down.classList.add('section__study-down--animation');
+    if (up) {
+      up.classList.add('section__study-up--animation');
+      const down = entry.target.querySelector('.section__study-down');
+      down.classList.add('section__study-down--animation');
+    }
+    const skills = entry.target.querySelector('.chart');
+    if (!skills) return;
+    skills.classList.add('chart--prod');
   }
 };
 

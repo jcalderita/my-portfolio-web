@@ -601,6 +601,13 @@ main {
 
 .testimonial {
   align-self: start;
+
+  &--height {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
   &__header {
     font-weight: 500;
 
@@ -701,6 +708,56 @@ main {
     &:focus {
       outline: none;
     }
+  }
+}
+
+.skills {
+  width: 100%;
+  height: 100%;
+}
+
+.charts {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chart--horiz {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include media-display-content() {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.chart__bar {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: linear-gradient(to right, $primary, $primary-darker);
+  border-radius: 0.5rem;
+  opacity: 0;
+
+  .chart--prod & {
+    @include stagger-anim-delay($numSkills, 0s, 1.2s);
+  }
+}
+
+.chart__label {
+  color: $font-color-text;
+  font-weight: 500;
+
+  @include media-display-content() {
+    font-size: 1.2rem;
+  }
+
+  @include media-large-content() {
+    font-size: 1.7rem;
   }
 }
 
