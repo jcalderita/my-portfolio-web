@@ -1,2 +1,2 @@
 # my-portfolio-web
-Portfolio/Cv web.
+Página web personal con mi porfolio.
