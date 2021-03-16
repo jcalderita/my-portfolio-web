@@ -2,8 +2,7 @@
   "name": "my-portfolio-web",
   "version": "0.1.1",
   "description": "Portfolio/Cv web.",
-  "source": "dist/js/index.js",
-  "main": "dist/index.html",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch scss/main.scss:css/main.css",
     "live": "live-server",
@@ -26,10 +25,8 @@
     "url": "https://github.com/jcalderita/my-portfolio-web/issues"
   },
   "homepage": "https://github.com/jcalderita/my-portfolio-web#readme",
-  "dependencies": {
-    "parcel": "^2.0.0-beta.2"
-  },
   "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
     "parcel-plugin-lazy": "^0.0.4"
   }
 }
