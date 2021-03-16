@@ -2,11 +2,14 @@
   "name": "my-portfolio-web",
   "version": "0.1.1",
   "description": "Portfolio/Cv web.",
-  "main": "index.html",
+  "source": "dist/js/index.js",
+  "main": "dist/index.html",
   "scripts": {
     "sass": "sass --watch scss/main.scss:css/main.css",
     "live": "live-server",
     "start": "start npm run sass && start npm run live",
+    "dev": "parcel serve index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/jcalderita/my-portfolio-web/issues"
   },
-  "homepage": "https://github.com/jcalderita/my-portfolio-web#readme"
+  "homepage": "https://github.com/jcalderita/my-portfolio-web#readme",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "parcel-plugin-lazy": "^0.0.4"
+  }
 }

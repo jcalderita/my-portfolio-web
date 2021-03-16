@@ -7,6 +7,12 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+# Parcel related files
+dist/
+.cache/
+.parcel-cache/
+
+
 # Firebase cache
 .firebase/
 
