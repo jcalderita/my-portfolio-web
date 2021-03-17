@@ -8,7 +8,7 @@
     "live": "live-server",
     "start": "start npm run sass && start npm run live",
     "dev": "parcel serve index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,8 +27,9 @@
   "homepage": "https://github.com/jcalderita/my-portfolio-web#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "parcel": "^2.0.0-beta.2",
-    "parcel-plugin-lazy": "^0.0.4",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-lazy-extended": "^0.0.1",
+    "parcel-plugin-static-files-copy": "^2.5.1",
     "postcss": "^8.2.8"
   },
   "postcss": {
@@ -41,5 +42,13 @@
         ]
       }
     }
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "json",
+        "staticOutDir": "json"
+      }
+    ]
   }
 }

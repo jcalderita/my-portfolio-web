@@ -1,5 +1,6 @@
 'use strict';
 
+import 'regenerator-runtime/runtime';
 import inicializarImages from './images.js';
 import inicializarLearn from './learn.js';
 import inicializarNavegador from './navigator.js';
@@ -13,7 +14,3 @@ inicializarSecciones();
 inicializarImages();
 inicializarSlide();
 inicializarLearn();
-
-// const html = document.querySelector('.html');
-// console.log(html);
-// html.classList.toggle('zoom--active');
