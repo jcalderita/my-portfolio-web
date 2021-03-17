@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "my-portfolio-web-bc8ea",
-    "test": "my-portfolio-web-test"
+    "main": "my-portfolio-web-bc8ea",
+    "parcel": "my-portfolio-web-test"
   }
 }
